@@ -11,18 +11,31 @@
   
   <!-- style.css -->
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   
   <!-- Google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-   
-
-
+  
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
   
 <body>
+  <div class="up"></div>
+  <div class="down"></div>
+  <div class="line"></div>
   
+  <script>
+    $(".line").animate({"width":"100%"},1500, function(){
+      $(".line").css("right",0)
+      $(".line").animate({"width": "0%"},function(){
+        $(".up").animate({"height" : "0%"});
+        $(".down").animate({"height" : "0%"});
+      });
+
+    })
+  </script>
   <header>
     <div class="container flex pop">
       <a href="" class="logo">
@@ -42,6 +55,15 @@
   
   <main>
     <section id="hero" class="container">
+      <video src="/videos/RPReplay_Final1723511942.mov" autoplay loop muted 
+      height="450px"
+      border-radius="30px"
+      display="flex"
+      align-items="center";
+      margin-bottom="90px";
+      overflow="hidden"
+
+      ></video>
       <div class="hero_inner">
         <p class="pop">UX, UI, and Visual Artirst</p>
         <h1 class="pop">Reika Takamura</h1>
@@ -187,6 +209,53 @@ born in Japan
         </div>
         </section>
 
+        <div class="container-fluid">
+          <div class="row">
+            <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
+              <div class="card">
+                <img src="/image/image8.jpg.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Deco Home</h5>
+                  <p class="card-text">UX Design Group Work</p> <br>
+                  <a href="#" class="btn btn-primary">Download Project</a>
+                </div>
+              </div>
+            </div>
+        
+            <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
+              <div class="card">
+                <img src="/image/image9.jpg.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MYTrip</h5>
+                  <p class="card-text">UX Design Individual Work</p> <br>
+                  <a href="#" class="btn btn-primary">Downlaod Project</a>
+                </div>
+              </div>
+            </div>
+        
+            <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
+              <div class="card">
+                <img src="/image/image7.jpg.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Graham Windham UI</h5>
+                  <p class="card-text">UI Design Group Work</p> <br>
+                  <a href="#" class="btn btn-primary">Download Project</a>
+                </div>
+              </div>
+            </div>
+        
+            <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
+              <div class="card">
+                <img src="/image/Screenshot 2024-08-18 152739.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Other Deisgn Works</h5>
+                  <p class="card-text">Illustrations, Story Boards, logos, Posters.</p>
+                  <a href="#" class="btn btn-primary">Downlaod Images</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         <section id="contact" class="container">
           <h2 class="title pop">Contact</h2>
           <dl class="flex pop">
@@ -207,7 +276,6 @@ born in Japan
           <div class="column-c"></div>
           <div class="column-d"></div>
         </div>
-
 
   </main>
   
