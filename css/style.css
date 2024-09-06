@@ -69,15 +69,9 @@ html{
     transition: .3s;
   }
 
-  @media only screen and (min-width: 480px)and (max-width: 768px) {
-    header .container{
-        justify-content: center;
-    }
-    .header_menu li {
-        margin: 20px 16px 0 ;
-    }
   
-  }
+  
+  
 
 #hero {
     background-image: url(../videos/RPReplay_Final1723511942.mov);
